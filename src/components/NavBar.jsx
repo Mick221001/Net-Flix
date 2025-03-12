@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaSearch, FaUser, Circle, FaThLarge } from "react-icons/fa";
+import { AiOutlineSearch, AiOutlineUser , AiOutlineAppstore } from "react-icons/ai"; // Importa le icone da react-icons/ai
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -7,12 +7,9 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.scrollY > 50);
     };
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -31,9 +28,9 @@ const NavBar = () => {
 
       {/* Buttons */}
       <div className="nav-buttons">
-        <button><FaSearch size={20} /></button>
-        <button><FaThLarge size={20} /></button>
-        <button><FaUser Circle size={20} /></button>
+        <button><AiOutlineSearch size={20} /></button>
+        <button><AiOutlineAppstore size={20} /></button>
+        <button><AiOutlineUser  size={20} /></button>
       </div>
     </nav>
   );
