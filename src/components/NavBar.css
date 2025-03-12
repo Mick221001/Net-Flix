@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     background: rgba(0, 0, 0, 1);
     padding: 15px 20px;
     display: flex;
@@ -10,6 +10,8 @@
     align-items: center;
     transition: background 0.3s ease-in-out;
     z-index: 1000;
+    border-radius: 20px;
+    margin: 0.5% 10% 0 10%;
   }
   
   .navbar.scrolling {
