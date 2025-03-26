@@ -1,0 +1,36 @@
+.card-film {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-film:hover {
+    transform: scale(1.1);
+  }
+  
+  .film-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .film-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card-film:hover .film-info {
+    opacity: 1;
+  }
