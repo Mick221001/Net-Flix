@@ -12,15 +12,14 @@
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden; /* Nasconde la parte che esce dai limiti */
   }
   
   .movie-container {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
     gap: 10px;
     padding: 10px 0;
-    scrollbar-width: none;
+    transition: transform 0.3s ease;
   }
   
   .movie-container::-webkit-scrollbar {
@@ -52,3 +51,4 @@
   .scroll-button:hover {
     background: rgba(0, 0, 0, 0.9);
   }
+  
