@@ -36,7 +36,7 @@ const MovieSection = ({ title, movies }) => {
         <button className="scroll-button left" onClick={scrollLeft} disabled={currentIndex === 0}>&lt;</button>
         <div className="movie-container" ref={scrollRef} style={{ width: `${cardWidth * cardsVisible + cardGap * (cardsVisible - 1)}px` }}>
           {visibleMovies.map((movie, index) => (
-            <CardFilm key={index} image={movie.image} title={movie.title} description={movie.description} />
+            <CardFilm key={index} image={movie.image} title={movie.title} description={movie.description} url={movie.url} />
           ))}
         </div>
         <button className="scroll-button right" onClick={scrollRight} disabled={currentIndex >= movies.length - cardsVisible}>&gt;</button>
