@@ -4,6 +4,7 @@ import MovieSection from "./components/MovieSection";
 import "./components/MovieCards";
 import "./App.css";
 
+
 import action1 from "./assets/img/TakeCover.jpg";
 import action2 from "./assets/img/back_in_action.jpg";
 import action3 from "./assets/img/iAmLegend.jpg";

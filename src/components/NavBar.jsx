@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { AiOutlineSearch, AiOutlineUser , AiOutlineAppstore } from "react-icons/ai"; // Importa le icone da react-icons/ai
+import { Link } from "react-router-dom"; // Importa Link da react-router-dom
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
     const handleScroll = () => {
       setScrolling(window.scrollY > 50);
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -17,13 +18,13 @@ const NavBar = () => {
   return (
     <nav className={`navbar ${scrolling ? "scrolling" : ""}`}>
       {/* Logo */}
-      <a href="/" className="logo">N</a>
+      <Link to="/" className="logo">N</Link>
 
       {/* Links */}
       <div className="nav-links">
-        <a href="#film">Film</a>
-        <a href="#serie-tv">Serie TV</a>
-        <a href="#recenti">Recenti</a>
+        <Link to="/film">Film</Link>
+        <Link to="/serie-tv">Serie TV</Link>
+        <Link to="/recenti">Recenti</Link>
       </div>
 
       {/* Buttons */}
