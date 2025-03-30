@@ -2,17 +2,17 @@ import { useState, useEffect } from "react";
 import { AiOutlineSearch, AiOutlineUser , AiOutlineAppstore } from "react-icons/ai"; // Importa le icone da react-icons/ai
 import { Link } from "react-router-dom"; // Importa Link da react-router-dom
 import "./NavBar.css";
-// Importazione pagine
-import Film from "../pages/film";
-import SerieTV from "../pages/serieTV";
-import Recenti from "../pages/recenti";
+
 
 const NavBar = () => {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolling(window.scrollY > 50);
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolling) {
+        setScrolling(isScrolled);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,13 +22,13 @@ const NavBar = () => {
   return (
     <nav className={`navbar ${scrolling ? "scrolling" : ""}`}>
       {/* Logo */}
-      <Link to="/Home" className="logo">N</Link>
+      <Link to="/home" className="logo">N</Link>
 
       {/* Links */}
       <div className="nav-links">
-        <Link to="/Film">Film</Link>
-        <Link to="/SerieTV">Serie TV</Link>
-        <Link to="/Recenti">Recenti</Link>
+        <Link to="/film">Film</Link>
+        <Link to="/serietv">Serie TV</Link>
+        <Link to="/recenti">Recenti</Link>
       </div>
 
       {/* Buttons */}
