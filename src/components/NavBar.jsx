@@ -26,9 +26,9 @@ const NavBar = () => {
 
       {/* Links */}
       <div className="nav-links">
-        <Link to="/film">Film</Link>
-        <Link to="/serietv">Serie TV</Link>
-        <Link to="/recenti">Recenti</Link>
+        <Link to="/film">FILM</Link>
+        <Link to="/serietv">SERIE TV</Link>
+        <Link to="/recenti">RECENTI</Link>
       </div>
 
       {/* Buttons */}

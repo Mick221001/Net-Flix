@@ -53,9 +53,10 @@ function Home() {
   return (
     <div>
       <NavBar />
-      <MovieSection title="Azione" movies={actionMovies} />
-      <MovieSection title="Commedia" movies={comedyMovies} />
-      <MovieSection title="Horror" movies={horrorMovies} />
+      <h1>Benvenuto su Net <span>&</span> Flix</h1>
+      <MovieSection title="⚔️Azione⚔️" movies={actionMovies} />
+      <MovieSection title="🎭Commedia🎭" movies={comedyMovies} />
+      <MovieSection title="👻Horror👻" movies={horrorMovies} />
     </div>
   );
 }

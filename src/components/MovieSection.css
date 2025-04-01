@@ -4,9 +4,24 @@
   }
   
   .section-title {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Usa un font-size maggiore per titoli evidenti */
     margin-left: 20px;
+    padding: 10px 20px; /* Aggiungi padding per distanziare il testo dal bordo */
+    background: linear-gradient(45deg, #0e57dd, #0acbe4); /* Gradiente di colore */
+    color: white; /* Colore del testo */
+    border-radius: 10px; /* Bordo arrotondato con un valore più moderato */
+    display: inline-block; /* Assicura che il titolo occupi solo lo spazio necessario */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per dare profondità */
+    text-align: center; /* Centra il testo */
   }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.2rem; /* Riduci la dimensione su schermi piccoli */
+      padding: 8px 15px;
+    }
+  }
+  
   
   .movie-container-wrapper {
     display: flex;

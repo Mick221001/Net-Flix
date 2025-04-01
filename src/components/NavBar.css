@@ -28,9 +28,12 @@
   
   .nav-links a {
     margin: 0 15px;
-    color: #1E90FF;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 0 2px #1eade0, 0 0 5px #0ca2e2, 0 0 10px #2d9cd7,
+    0 0 20px #b6b5d6, 0 0 40px #799cab, 0 0 80px #100ce2;
   }
   
   .nav-buttons button {
