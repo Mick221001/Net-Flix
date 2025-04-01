@@ -1,5 +1,7 @@
 import React from "react";
 import MovieSection from "../components/MovieSection";
+import NavBar from "../components/NavBar";
+import "../App.css"; // Import CSS file for styling
 
 import action1 from "../assets/img/TakeCover.jpg";
 import action2 from "../assets/img/back_in_action.jpg";
@@ -50,6 +52,7 @@ const horrorMovies = [
 function Home() {
   return (
     <div>
+      <NavBar />
       <MovieSection title="Azione" movies={actionMovies} />
       <MovieSection title="Commedia" movies={comedyMovies} />
       <MovieSection title="Horror" movies={horrorMovies} />
