@@ -22,7 +22,7 @@ const NavBar = () => {
   return (
     <nav className={`navbar ${scrolling ? "scrolling" : ""}`}>
       {/* Logo */}
-      <Link to="/home" className="logo">N</Link>
+      <Link to="/" className="logo">N</Link>
 
       {/* Links */}
       <div className="nav-links">
