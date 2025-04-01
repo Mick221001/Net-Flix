@@ -1,13 +1,10 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import "./App.css";
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Outlet /> {/* Questo cambierà in base alla pagina visitata */}
+      <h1>Benvenuto su Net&Flix</h1>
+      <Outlet /> {/* Qui verranno renderizzate le pagine */}
     </div>
   );
 }
