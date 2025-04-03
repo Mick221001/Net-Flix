@@ -35,6 +35,19 @@ import horror3 from "../assets/img/spindeln.jpg";
 import horror4 from "../assets/img/noi.jpg";
 import horror5 from "../assets/img/theShining.jpg";
 
+const Top =[
+  {image: recentSeries5, title: "Sconfort Zone", description: "", url: ""},
+  {image: recentMovies1, title: "Biancaneve", description: "", url: ""},
+  {image: recentSeries4, title: "Come assicurarsi il divorzio", description: "", url: ""},
+  {image: recentMovies2, title: "Minecraft", description: "", url: ""},
+  {image: recentMovies3, title: "Il ragazzo dai pantaloni ROSA", description: "", url: ""},
+  {image: recentSeries2, title: "Il Gattopardo", description: "", url: ""},
+  {image: recentSeries3, title: "Il Camorrista", description: "", url: ""},
+  {image: recentMovies4, title: "Conclave", description: "", url: ""},
+  {image: recentMovies5, title: "Captain America, Brave new World", description: "", url: ""},
+  {image: recentSeries1, title: "Adolescence", description: "", url: ""},
+]
+
 const recentMovies = [
   {image: recentMovies1, title: "Biancaneve", description: "", url: ""},
   {image: recentMovies2, title: "Minecraft", description: "", url: ""},
@@ -82,6 +95,7 @@ function Home() {
     <div>
       <NavBar />
       <h1>Benvenuto su Net <span>&</span> Flix</h1>
+      <MovieSection title="⭐Top⭐" movies={Top} />
       <MovieSection title="🎬Film Recenti🎬" movies={recentMovies} />
       <MovieSection title="📺Serie TV Recenti📺" movies={recentSeries} />
       <MovieSection title="⚔️Azione⚔️" movies={actionMovies} />
