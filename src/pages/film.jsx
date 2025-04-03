@@ -29,12 +29,22 @@ import horror3 from "../assets/img/spindeln.jpg";
 import horror4 from "../assets/img/noi.jpg";
 import horror5 from "../assets/img/theShining.jpg";
 
-const recentMovies = [
+const TopMovies =[
   {image: recentMovies1, title: "Biancaneve", description: "", url: ""},
   {image: recentMovies2, title: "Minecraft", description: "", url: ""},
   {image: recentMovies3, title: "Il ragazzo dai pantaloni ROSA", description: "", url: ""},
   {image: recentMovies4, title: "Conclave", description: "", url: ""},
   {image: recentMovies5, title: "Captain America, Brave new World", description: "", url: ""},
+]
+
+const recentMovies = [
+  { image: comedy1, title: "Sonic 3", description: "Un viaggio esilarante.", url: "https://streamingcommunity.luxe/titles/10777-sonic-3-il-film" },
+  { image: recentMovies1, title: "Biancaneve", description: "", url: ""},
+  { image: recentMovies2, title: "Minecraft", description: "", url: ""},
+  { image: action4, title: "Indiana Jones", description: "Rapido e emozionante.", url: "https://streamingcommunity.luxe/titles/6242-indiana-jones-e-il-quadrante-del-destino" },
+  { image: recentMovies3, title: "Il ragazzo dai pantaloni ROSA", description: "", url: ""},
+  { image: recentMovies4, title: "Conclave", description: "", url: ""},
+  { image: recentMovies5, title: "Captain America, Brave new World", description: "", url: ""},
 ];
 
 const actionMovies = [
@@ -69,6 +79,7 @@ function Film(){
     <div>
       <NavBar />
       <h1>FILM</h1>
+      <MovieSection title="⭐️Top Movies⭐️" movies={TopMovies} />
       <MovieSection title="🎬Recenti🎬" movies={recentMovies} />
       <MovieSection title="⚔️Azione⚔️" movies={actionMovies} />
       <MovieSection title="🎭Commedia🎭" movies={comedyMovies} />
