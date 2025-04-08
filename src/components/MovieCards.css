@@ -1,25 +1,27 @@
 .movie-card {
     position: relative;
-    width: 200px;
-    height: 300px;
-    border-radius: 30px;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-}
-
-.movie-card:hover {
-    transform: scale(1.1);
-}
-
-.movie-image {
+    flex: 1 0 18%; /* Default: circa 5 card su PC */
+    max-width: 200px;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 30px;
-}
-
-.movie-info {
+    border-radius: 20px;
+  }
+  
+  .movie-info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -30,20 +32,33 @@
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
-
-.movie-card:hover .movie-info {
+  }
+  
+  .movie-card:hover .movie-info {
     opacity: 1;
-}
-
-/* 🔹 Stile per il titolo con link */
-.movie-info h3 a {
-    color: #1e90ff;  /* Blu acceso per contrasto */
+  }
+  
+  .movie-info h3 a {
+    color: #1e90ff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s ease-in-out;
-}
-
-.movie-info h3 a:hover {
-    color: #00bfff;  /* Blu più chiaro al passaggio del mouse */
-}
+  }
+  
+  .movie-info h3 a:hover {
+    color: #00bfff;
+  }
+  
+  /* ✅ Responsive layout */
+  @media (max-width: 1024px) {
+    .movie-card {
+      flex: 1 0 45%; /* 2 card per riga su tablet */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .movie-card {
+      flex: 1 0 90%; /* 1 card per riga su mobile */
+    }
+  }
+  

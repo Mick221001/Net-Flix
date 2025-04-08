@@ -1,69 +1,49 @@
 .movie-section {
-    margin: 20px 0;
-    color: white;
-  }
-  
-  .section-title {
-    font-size: 2rem; /* Usa un font-size maggiore per titoli evidenti */
-    margin-left: 20px;
-    padding: 10px 20px; /* Aggiungi padding per distanziare il testo dal bordo */
-    background: linear-gradient(45deg, #0e57dd, #0acbe4); /* Gradiente di colore */
-    color: white; /* Colore del testo */
-    border-radius: 10px; /* Bordo arrotondato con un valore più moderato */
-    display: inline-block; /* Assicura che il titolo occupi solo lo spazio necessario */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per dare profondità */
-    text-align: center; /* Centra il testo */
-  }
-  
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 1.2rem; /* Riduci la dimensione su schermi piccoli */
-      padding: 8px 15px;
-    }
-  }
-  
-  
-  .movie-container-wrapper {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden; /* Nasconde la parte che esce dai limiti */
-  }
-  
-  .movie-container {
-    display: flex;
-    gap: 10px;
-    padding: 10px 0;
-    transition: transform 0.3s ease;
-  }
-  
-  .movie-container::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .scroll-button {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    border-radius: 50%;
-  }
-  
-  .scroll-button.left {
-    left: 0;
-  }
-  
-  .scroll-button.right {
-    right: 0;
-  }
-  
-  .scroll-button:hover {
-    background: rgba(0, 0, 0, 0.9);
-  }
-  
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e90ff;
+  text-shadow: 0 0 5px rgba(30, 173, 224, 0.6);
+}
+
+.movie-container-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #444;
+}
+
+.movie-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  width: 100%;
+  scrollbar-width: none; /* Firefox */
+}
+
+.movie-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

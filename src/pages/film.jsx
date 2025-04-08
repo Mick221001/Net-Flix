@@ -2,18 +2,24 @@ import NavBar from "../components/NavBar";
 import React from "react";
 import MovieSection from "../components/MovieSection";
 import "../App.css"; // Import CSS file for styling
+import Footer from "../components/Footer";
+
 
 import recentMovies1 from "../assets/img/biancaneveFilmRec.jpg";
 import recentMovies2 from "../assets/img/minecraftFilmRec.jpg"; 
 import recentMovies3 from "../assets/img/rosaFilmRec.jpg";
 import recentMovies4 from "../assets/img/conclaveFilmRec.jpg";
 import recentMovies5 from "../assets/img/capAmericaFilmRec.jpeg";
+import recentMovies6 from "../assets/img/mickey17Film.png";
+import recentMovies7 from "../assets/img/AnoraFilm.jpg";
 
 import action1 from "../assets/img/TakeCover.jpg";
 import action2 from "../assets/img/back_in_action.jpg";
 import action3 from "../assets/img/iAmLegend.jpg";
 import action4 from "../assets/img/indiana.jpg";
 import action5 from "../assets/img/terminator2.jpg";
+import action6 from "../assets/img/braveheartFilm.jpg";
+import action7 from "../assets/img/sniperFilm.jpg";
 
 import comedy1 from "../assets/img/Sonic3.jpg";
 import comedy2 from "../assets/img/AliG.jpg";
@@ -28,6 +34,8 @@ import horror2 from "../assets/img/it.jpg";
 import horror3 from "../assets/img/spindeln.jpg";
 import horror4 from "../assets/img/noi.jpg";
 import horror5 from "../assets/img/theShining.jpg";
+import horror6 from "../assets/img/HalloweenFilm.jpg";
+import horror7 from "../assets/img/Shark3Film.jpg";
 
 const TopMovies =[
   {image: recentMovies1, title: "Biancaneve", description: "", url: ""},
@@ -35,6 +43,8 @@ const TopMovies =[
   {image: recentMovies3, title: "Il ragazzo dai pantaloni ROSA", description: "", url: ""},
   {image: recentMovies4, title: "Conclave", description: "", url: ""},
   {image: recentMovies5, title: "Captain America, Brave new World", description: "", url: ""},
+  {image: recentMovies6, title: "Mickey17", description: "", url: ""},
+  {image: recentMovies7, title: "Anora", description: "", url: ""},
 ]
 
 const recentMovies = [
@@ -45,6 +55,8 @@ const recentMovies = [
   { image: recentMovies3, title: "Il ragazzo dai pantaloni ROSA", description: "", url: ""},
   { image: recentMovies4, title: "Conclave", description: "", url: ""},
   { image: recentMovies5, title: "Captain America, Brave new World", description: "", url: ""},
+  { image: recentMovies6, title: "Mickey17", description: "", url: ""},
+  { image: recentMovies7, title: "Anora", description: "", url: ""},
 ];
 
 const actionMovies = [
@@ -53,6 +65,8 @@ const actionMovies = [
   { image: action3, title: "I Am Legend", description: "Azione senza sosta.", url: "https://streamingcommunity.luxe/titles/124-io-sono-leggenda" },
   { image: action4, title: "Indiana Jones", description: "Rapido e emozionante.", url: "https://streamingcommunity.luxe/titles/6242-indiana-jones-e-il-quadrante-del-destino" },
   { image: action5, title: "Terminator 2", description: "Adrenalina garantita.", url: "https://streamingcommunity.luxe/titles/1526-terminator" },
+  { image: action6, title: "Braveheart", description: "Un capolavoro epico.", url: "https://streamingcommunity.luxe/titles/11142-braveheart-cuore-impavido" },
+  { image: action7, title: "Sniper", description: "Un capolavoro di azione.", url: "https://streamingcommunity.luxe/titles/11134-sniper" },
 ];
 
 const comedyMovies = [
@@ -71,6 +85,8 @@ const horrorMovies = [
   { image: horror3, title: "Spindeln", description: "Classico horror anni 50.", url: "https://www.youtube.com/watch?v=ub8hS2gy1Uc" },
   { image: horror4, title: "Noi", description: "Non fidarsi mai.", url: "https://streamingcommunity.luxe/titles/721-noi" },
   { image: horror5, title: "The Shining", description: "Un capolavoro horror.", url: "https://streamingcommunity.luxe/titles/337-shining" },
+  { image: horror6, title: "Halloween", description: "Un classico del terrore.", url: "https://streamingcommunity.luxe/titles/10753-halloween" },
+  { image: horror7, title: "Shark 3", description: "Un capolavoro dell'orrore.", url: "https://streamingcommunity.luxe/titles/10754-shark-3" },
 ];
 
 
@@ -84,6 +100,7 @@ function Film(){
       <MovieSection title="⚔️Azione⚔️" movies={actionMovies} />
       <MovieSection title="🎭Commedia🎭" movies={comedyMovies} />
       <MovieSection title="👻Horror👻" movies={horrorMovies} />
+      <Footer />
     </div>
     );
 }

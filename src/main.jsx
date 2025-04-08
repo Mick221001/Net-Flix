@@ -2,11 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import "./index.css";
+import "./App.css";
 import Home from "./pages/Home.jsx";
 import Film from "./pages/film.jsx";
 import SerieTV from "./pages/serietv.jsx";
 import Recenti from "./pages/recenti.jsx";
+
 
 const router = createBrowserRouter([
   {
